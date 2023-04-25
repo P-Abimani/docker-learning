@@ -1,1 +1,33 @@
 # docker-learning
+
+## DOCKER
+
+Docker is a container technology A tool for creating and managing resorcres. There are two main concepts in the docker, One is Containers and another one is Images.
+
+## IMAGES:
+
+
+1. Images are one of the two core building blocks Docker is all about ( the other one is "Containers" ).
+
+2. Images are blueprints / templates for containers. They are read-only and contain the application as well as the necessary application environment (operating system, runtimes, tools,...).
+
+3. Images do not run themselves, instead, they can be executed as containers.
+
+4. Images are either pre-built (e.g. official Images you find on DockerHub) or you build your own Images by defining a Dockerfile.
+
+5. Dockerfiles contain instructions which are executed when an image is built ( docker build . ),every instruction then creates a layer in the image. Layers are used to efficiently rebuild and share images.
+
+6. The CMD instruction is special: It's not executed when the image is built but when a container is created and started based on that image.
+
+## CONTAINERS:
+
+1. Containers are the other key building block Docker is all about.
+
+2. Containers are running instances of Images. When you create a container (via docker run ), a thin read-write layer is added on top of the Image.
+
+3. Multiple Containers can therefore be started based on one and the same Image. All Containers run in isolation, i.e. they don't share any application state or written data.
+
+4. You need to create and start a Container to start the application which is inside of a Container. So it's Containers which are in the end executed - both in development and production.
+
+
+

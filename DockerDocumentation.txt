@@ -25,10 +25,10 @@ The CMD instruction is special: It's not executed when the image is built but wh
 CONTAINERS:
 
 
-Containers are the other key building block Docker is all about.
+1. Containers are the other key building block Docker is all about.
 
-Containers are running instances of Images. When you create a container (via docker run ), a thin read-write layer is added on top of the Image.
+2. Containers are running instances of Images. When you create a container (via docker run ), a thin read-write layer is added on top of the Image.
 
-Multiple Containers can therefore be started based on one and the same Image. All Containers run in isolation, i.e. they don't share any application state or written data.
+3. Multiple Containers can therefore be started based on one and the same Image. All Containers run in isolation, i.e. they don't share any application state or written data.
 
-You need to create and start a Container to start the application which is inside of a Container. So it's Containers which are in the end executed - both in development and production.
+4. You need to create and start a Container to start the application which is inside of a Container. So it's Containers which are in the end executed - both in development and production.
